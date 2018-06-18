@@ -5,6 +5,10 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialAppModule } from './ngmaterial.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    MaterialAppModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
